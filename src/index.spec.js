@@ -1,4 +1,5 @@
 const must = require("must");
+const q = require("q");
 
 const register = function() {
     require("./index");
@@ -277,6 +278,16 @@ describe("must-return", function() {
                 (new Promise(function() {})).must.be.a.promise();
                 Promise.resolve().must.be.a.promise();
                 Promise.reject().must.be.a.promise();
+            };
+
+            testAssertion.must.not.throw();
+        });
+
+        it("on q promises", () => {
+            const testAssertion = function() {
+                q(function() {}).must.be.a.promise();
+                q.resolve().must.be.a.promise();
+                q.reject().must.be.a.promise();
             };
 
             testAssertion.must.not.throw();
