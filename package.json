@@ -1,0 +1,19 @@
+{
+    "name": "must-promise",
+    "version": "0.0.1",
+    "description": "`is a promise` assertion for Must.js",
+    "main": "src/index.js",
+    "author": "Jacek",
+    "license": "MIT",
+    "scripts": {
+        "test": "mocha src/**/*.spec.js"
+    },
+    "devDependencies": {
+        "mocha": "^3.2.0",
+        "must": "^0.13.4"
+    },
+    "repository": {
+        "url": "git@github.com:dzek69/must-return.git",
+        "type": "git"
+    }
+}
