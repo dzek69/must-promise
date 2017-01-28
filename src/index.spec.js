@@ -270,4 +270,16 @@ describe("must-return", function() {
             testAssertion.must.not.throw();
         });
     });
+
+    describe("it works", () => {
+        it("on real promises", () => {
+            const testAssertion = function() {
+                (new Promise(function() {})).must.be.a.promise();
+                Promise.resolve().must.be.a.promise();
+                Promise.reject().must.be.a.promise();
+            };
+
+            testAssertion.must.not.throw();
+        });
+    })
 });
