@@ -1,6 +1,6 @@
 {
     "name": "must-promise",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "`is a promise` assertion for Must.js",
     "main": "src/index.js",
     "author": "Jacek",

@@ -12,6 +12,23 @@ npm install must-promise
 
 ```javascript
 require("must-promise"); // This will internally require must and upgrade its prototype.
+
+const q = require("q");
+describe("Some tests", () => {
+    it("detects promises", () => {
+        q().must.be.a.promise();
+        Promise.resolve().must.be.a.promise();
+    });
+
+    it("detects not-promises", () => {
+        "5".must.not.be.a.promise();
+        true.must.not.be.a.promise();
+    });
+    
+    it("will fail on unchainable promise-like thing", () => {
+        ({ then: function() {} }).must.not.be.a.promise();
+    });
+});
 ```
 
 # License 
