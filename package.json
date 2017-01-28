@@ -14,7 +14,7 @@
         "q": "^1.4.1"
     },
     "repository": {
-        "url": "git@github.com:dzek69/must-return.git",
+        "url": "git@github.com:dzek69/must-promise.git",
         "type": "git"
     }
 }
