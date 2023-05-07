@@ -1,3 +1,7 @@
+# DEPRECATED!!!
+
+Nobody uses this thing and it may have bugs. It's not recommended to use it
+
 # must-return
 
 This library adds `is a promise` assertion to `Must.js`. Internally it checks if object has a `then` property and if
